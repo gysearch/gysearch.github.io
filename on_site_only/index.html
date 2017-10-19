@@ -1,0 +1,4 @@
+﻿<script>
+q = window.location.search.substr(1);
+window.location.replace("https://" + (q.indexOf("site%3A") != -1 && /[а-яА-Я]/.test(decodeURIComponent(q)) ? "yandex.ru/search/?text=" : "google.com/search?q=") + q);
+</script>
